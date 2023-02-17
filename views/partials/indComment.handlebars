@@ -1,0 +1,18 @@
+
+<br>
+<div class="container d-flex justify-content-center">
+    <div class="comments">
+    {{#each this}}
+    <div class="container d-flex">
+        <img class="col-1 d-flex justify-content-start"style="height: 90px; width: 90px" src="/default.jpeg" alt="avicon">
+    <div class="card">
+        <div class="card-body">
+        <p class="card-text">{{comment_content}}</p> 
+        </div>
+    <h6 class="card-footer">Created by: {{user.user_name}} @ {{format_date created_at}}</h6>
+    </div>
+    </div>
+    <br>
+    {{/each}}
+</div>
+</div>

@@ -1,0 +1,30 @@
+<div class="card">
+        <h5 class="card-header">Edit Your Profile</h5>
+        <form class="card-body">
+          <div class="mb-3">
+            <label for="newUserName" class="form-label">User Name for Journal:</label>
+            <input type="text" class="form-control" id="newUserName" placeholder="{{user.user_name}}">
+          </div>
+          <div class="mb-3">
+            <label for="newName" class="form-label">Name:</label>
+            <input type="text" class="form-control" id="newName" placeholder="{{user.name}}">
+          </div>
+             <label for="newUserEmail" class="form-label">Email:</label>
+            <input type="text" class="form-control" id="newUserEmail" placeholder="{{user.email}}">
+          </div>
+             <label for="userLocation" class="form-label">Location:</label>
+            <input type="text" class="form-control" id="userLocation" placeholder="{{user.location}}">
+          </div>
+          <div class="mb-3">
+            <label for="newPost" class="form-label">Tell us about yourself:</label>
+            <textarea class="form-control" id="bio" rows="3" placeholder="{{user.bio}}"></textarea>
+          </div>
+          <div class="mb-3">
+          <label for="profile_pic" class="form-label">Choose a profile image to upload. Must be in jpeg or png format and less than 5MB </label>
+            <input type="file" class="form-control" id="profile_pic">
+            </div>
+          <button type="submit" class="btn btn-dark mb-3" id="editUserSubmit">Submit new User Profile</button>
+        </form>
+      </div>
+
+      <script src="/js/editUser.js"></script>

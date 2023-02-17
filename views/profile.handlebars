@@ -1,0 +1,10 @@
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">{{user.user_name}}'s Profile</h5>
+        <p class="card-text">NAME: {{user.name}}</p>
+        <p class="card-text">EMAIL: {{user.email}}</p>
+        <p class="card-text">BIO: {{user.bio}}</p>
+        <p class="card-text">LOCATION: {{user.location}}</p>
+    </div>
+</div>
+<a href="/dashboard/profile/edit/{{user_id}}"><button class="btn btn-dark mb-3 d-flex">Edit Profile</button></a>

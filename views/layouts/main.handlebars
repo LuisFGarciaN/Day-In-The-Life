@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Fredoka+One&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>    
+
+<title>A Day in the Life</title>
+</head>
+
+
+
+<body>
+    {{!-- Navbar visible across all views --}}
+    <nav class="navbar navbar-light bg-light d-flex">
+        <a class="mx-3 navbar-brand" href="/dashboard">
+        <img class= "nav-img" src="/img/logo.jpg" alt="Day in the Life"></a>
+      </nav>
+<!--main body-->
+      <main>
+        {{{ body }}}
+      </main>
+      {{#if loggedIn}}
+        {{!-- <div class="container-fluid d-flex">
+  <div class="card-body dashboard">
+
+    <div class="row mx-3 my-5">
+      <div class="sidebar position-absolute d-flex mx-2 justify-content-between flex-column flex-shrink-0 p-3" style="width: 280px; height:400px">
+        <a href="/dashboard/create"><button type="button" id ='new-entry' style="color: #2e424d;background-color:#98DAD9; font-family: 'Courgette', cursive;" class="landing-btn my-4 btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+          Create Entry
+        </button></a>
+        <button type="button" style="color: #2e424d;background-color:#98DAD9; font-family: 'Courgette', cursive;"class="landing-btn my-4 btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+          My Feed
+        </button>
+        <button type="button" style="color: #2e424d;background-color:#98DAD9; font-family: 'Courgette', cursive;" class="landing-btn my-4 btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+          All Users
+        </button>
+        <button id="logout"type="button" style="color: #2e424d;background-color:#98DAD9; font-family: 'Courgette', cursive;" class="landing-btn my-4 btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+          Sign Out
+        </button>
+        <a href="/dashboard/profile/{{user_id}}">
+        <button id="myAccount" type="button" style="color: #2e424d;background-color:#98DAD9; font-family: 'Courgette', cursive;" class="landing-btn my-4 btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+          My Profile
+        </button></a>
+        </div> --}}
+<script src="/js/logout.js"></script>
+{{/if}}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
+

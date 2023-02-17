@@ -1,0 +1,38 @@
+{{> indEntry entry}}
+
+{{#if loggedIn}}
+<br>
+<!-- Button trigger modal -->
+<div class="container-fluid d-flex justify-content-end">
+<button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Add comment
+</button>
+</div>
+<br>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Add Comment</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+            <label for="newComment" class="form-label">comment: </label>
+            <textarea class="form-control" id="newComment" rows="3"></textarea>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id="commentSubmit">Submit Comment</button>
+      </div>
+    </div>
+  </div>
+</div>
+{{else}}
+<p>you must be signed in to add or view comments</p>
+{{/if}}
+<br>
+{{> indComment entry.comments}}
+
+<script src="/js/addComment.js"></script>

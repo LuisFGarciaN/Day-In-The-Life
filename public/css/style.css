@@ -1,0 +1,122 @@
+body {
+    background-color: #0b0c10;
+    font-family: 'Courgette';
+}
+
+.header{
+    text-align: center;
+    padding: 50px 0;
+}
+img{
+    display: block;
+    margin: 0 auto;
+    width: 525px;
+    border-radius: 25px;
+    box-shadow: 01px 4px 12px 3px #66fcf1;
+}
+
+.form-box{
+    width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    text-align: center;
+    border:2px solid #45a29e;
+    border-radius: 30px;
+    background-color: white;
+    color: black; 
+    box-shadow:05px 7px 15px 6px #66fcf1; 
+    justify-items: center; 
+    font-family: "courgette";
+}
+
+.form-grup{
+    display:contents;
+    align-items: flex-start;
+}
+
+input,textarea {
+    border-radius: 10px;
+    border-color:#45a29e ;
+    background-color:white ;
+}
+
+input[type="submit"] {
+	background: #98dad9;
+	color: black;
+	border-style: outset;
+	border-color: 2px solid #45a29e;
+	height: 50px;
+	width: 100px;
+	font: 'pacifico', cursive;
+	text-shadow: none;
+    cursor: pointer;
+    box-shadow: 0.5px 2px 6px 1.5px #66fcf1;
+}
+
+.jumbotron {
+    background-color: white;
+    height: 900px;
+    margin-top: 40px;
+    padding-top: 150px;
+    
+}
+
+.nav-img {
+    height:50px;
+    width:200px;
+    margin-left: 50px;
+}
+
+.jumborow {
+    margin-top: 100px;
+}
+
+.lead {
+    font-family: "Courgette"
+}
+
+.landing-btn {
+    border-radius: 15px;
+    width: 200px;
+    height: 50px;
+    margin-right: 50px;
+    background-color: #98dad9;
+    font-family: 'courgette';
+    box-shadow: 0.5px 2px 6px 1.5px #66fcf1
+}
+
+.login-card {
+    width: 400px;
+    margin-left: 400px;
+    font-family: 'Courgette';
+    border: #66fcf1;
+    box-shadow: 0.5px 2px 6px 1.5px #66fcf1;
+
+}
+
+button[type="submit"] {
+    background: #98dad9;
+	color: black;
+	border-style: outset;
+	border-color: 2px solid #45a29e;
+    text-shadow: none;
+    cursor: pointer;
+    box-shadow: 0.25px 1px 3px .75px #66fcf1;
+}
+
+h5[class="card-header"] {
+    background: #98dad9;   
+}
+
+.page-title {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    background-color: #98dad9;
+    border-radius: 15px;
+       
+}
+.line{
+    width: 100%;
+    height: 1px;
+    margin-bottom: 20px;
+}

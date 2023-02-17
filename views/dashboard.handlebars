@@ -1,0 +1,43 @@
+
+  <div class="container-fluid d-flex">
+  <div class="card-body dashboard">
+
+    <div class="row mx-3 my-5">
+      <div class="sidebar position-absolute d-flex mx-2 justify-content-between flex-column flex-shrink-0 p-3" style="width: 280px; height:400px">
+        <a href="/dashboard/create"><button type="button" id ='new-entry' style="color: #2e424d;background-color:#98DAD9; font-family: 'Courgette', cursive;" class="landing-btn my-4 btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+          Create Entry
+        </button></a>
+        <a href="/dashboard"><button type="button" style="color: #2e424d;background-color:#98DAD9; font-family: 'Courgette', cursive;"class="landing-btn my-4 btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+          My Feed
+        </button></a>
+        <a href="/"><button type="button" style="color: #2e424d;background-color:#98DAD9; font-family: 'Courgette', cursive;" class="landing-btn my-4 btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+          All Users
+        </button></a>
+        <a href="/landing"><button id="logout"type="button" style="color: #2e424d;background-color:#98DAD9; font-family: 'Courgette', cursive;" class="landing-btn my-4 btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+          Sign Out
+        </button></a>
+        <a href="/dashboard/profile/{{user_id}}">
+        <button id="myAccount" type="button" style="color: #2e424d;background-color:#98DAD9; font-family: 'Courgette', cursive;" class="landing-btn my-4 btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+          My Profile
+        </button></a>
+        </div>
+
+   <div class="container d-flex-col col-8">
+    {{#if entries.length}}
+
+    {{#each entries as |entry|}}
+      {{> indEntry entry}}
+      <br>
+    {{> indComment entry.comments}}
+    {{/each}}
+    </div>
+    {{else}}
+    <h5 class="card">No entries available for display. Journal entries you create will be displayed here</h5>
+    {{/if}}
+    </div> 
+  </div>
+  </div>
+  
+</div>
+
+<script src="/js/addCommentNonSingle.js"></script>
